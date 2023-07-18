@@ -9,6 +9,18 @@ spec:
   - name: web
     image: jupelok/otus:0.0.1
     imagePullPolicy: Always
+    readinessProbe:
+      httpGet:
+        path: /
+        port: 8000
+    livenessProbe:
+      tcpSocket: { port: 8000 }
+    startupProbe:
+      httpGet:
+        path: /
+        port: 8000
+      failureThreshold: 30
+      periodSeconds: 10
     volumeMounts:
     - name: app
       mountPath: /app
