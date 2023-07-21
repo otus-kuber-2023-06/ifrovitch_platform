@@ -113,3 +113,5 @@ Hello from Kubernetes storage
 
 root@my-pod2:/# cat /usr/share/nginx/html/data.txt
 snark
+
+
