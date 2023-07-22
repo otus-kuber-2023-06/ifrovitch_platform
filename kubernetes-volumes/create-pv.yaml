@@ -10,7 +10,5 @@ spec:
     storage: 10Gi
   accessModes:
     - ReadWriteOnce
-  storageClassName: 
-    - local-storage
   hostPath:
     path: "/data"
