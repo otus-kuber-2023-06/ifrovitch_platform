@@ -1,0 +1,16 @@
+image:
+  tag: v0.8.0
+replicas: 1
+ports:
+  containerPort: 8080
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8080
+  nodePort: 30001
+  name: frontend
+ingress:
+  host: shopp.158.160.104.163.sslip.io
+  backendPort: 80
+deployments:
+  name: frontend
