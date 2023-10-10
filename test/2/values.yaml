@@ -1,9 +1,0 @@
-controller:
-  service:
-    external:
-      enabled: false
-    internal:
-      enabled: true
-      annotations:
-        yandex.cloud/load-balancer-type: internal
-        yandex.cloud/subnet-id: e9bkdro19jm58em7ljhv
